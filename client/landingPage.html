@@ -1,0 +1,9 @@
+<template name="landingPage">
+  {{#if currentUser}}
+    {{> loginButtons}}
+  {{else}}
+    This site require login to procced
+    {{> spinner}}
+    {{loginProvoke}}
+  {{/if}}
+</template>
